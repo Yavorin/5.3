@@ -1,0 +1,64 @@
+    <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Practical5.3</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box_container">
+
+            <h1 class="title_function">ФУНКЦІЇ</h1>
+            <ul class="list_box_function">
+                <li class="list_function">Косинус 180 градусів (π радіан): y = <span id="cos_180"></span></li>
+                <li class="list_function">Результат обчислення арккосинуса нуля : y = <span id="acos_0"></span></li>
+                <li class="list_function">Результат обчислення синуса нуля радіан: y = <span id="sin_0"></span></li>
+                <li class="list_function">Синус 90 градусів (π /2 радіан): y = <span id="sin_90"></span></li>
+                <li class="list_function">Результат обчислення арксинуса одиниці: y = <span id="asin_1"></span></li>
+            </ul>
+
+            <h1 class="title_const">КОНСТАНТИ</h1>
+            <ul class="list_box_const">
+                <li class="list_const">Значення константи e = <span id="e_const"></span></li>
+                <li class="list_const">Значення константи π = <span id="pi_const"></span></li>
+                <li class="list_const">Десятковий логарифм постійної Ейлера (e) = <span id="log_e_dec"></span></li>
+                <li class="list_const">Двійковий логарифм постійної Ейлера (e) = <span id="log_e_bin"></span></li>
+                <li class="list_const">Натуральний логарифм числа 10 = <span id="log_10"></span></li>
+                <li class="list_const">Натуральний логарифм числа 2 = <span id="log_2"></span></li>
+                <li class="list_const">Корінь квадратний із двох = <span id="sqrt_2"></span></li>
+                <li class="list_const">Корінь квадратний з однієї другої = <span id="sqrt_half"></span></li>
+            </ul>
+
+            <h1 class="title_rand">ГЕНЕРАТОР ВИПАДКОВИХ ЧИСЕЛ</h1>
+            <div class="rand_box">
+                <p class="rand_text">Формування випадкових чисел в інтервалі [0;1]: y = <span id="random_number"></span></p>
+            </div>
+            
+        </div>
+    </div>        
+
+    <script>
+        // КОНСТАНТИ
+        document.getElementById('e_const').textContent = Math.E;
+        document.getElementById('pi_const').textContent = Math.PI;
+        document.getElementById('log_e_dec').textContent = Math.log10(Math.E);
+        document.getElementById('log_e_bin').textContent = Math.log2(Math.E);
+        document.getElementById('log_10').textContent = Math.log10(10);
+        document.getElementById('log_2').textContent = Math.log2(2);
+        document.getElementById('sqrt_2').textContent = Math.sqrt(2);
+        document.getElementById('sqrt_half').textContent = Math.sqrt(0.5);
+
+        // ФУНКЦІЇ
+        document.getElementById('cos_180').textContent = Math.cos(Math.PI);
+        document.getElementById('acos_0').textContent = Math.acos(0);
+        document.getElementById('sin_0').textContent = Math.sin(0);
+        document.getElementById('sin_90').textContent = Math.sin(Math.PI / 2);
+        document.getElementById('asin_1').textContent = Math.asin(1);
+        
+        // ГЕНЕРАТОР ВИПАДКОВИХ ЧИСЕЛ
+        document.getElementById('random_number').textContent = Math.random();
+    </script>
+</body>
+</html>
